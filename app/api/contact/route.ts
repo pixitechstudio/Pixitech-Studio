@@ -16,7 +16,7 @@ export async function POST(req: Request) {
     method: "POST",
     headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
     body: JSON.stringify({
-      from: `PixiTech Website <${process.env.CONTACT_FROM_EMAIL || "onboarding@resend.dev"}>`,
+      from: `Pixitech Website <${process.env.CONTACT_FROM_EMAIL || "onboarding@resend.dev"}>`,
       to: [process.env.CONTACT_TO_EMAIL || "hello@pixitechstudio.com"],
       reply_to: email, subject: `New enquiry: ${s("service", 80)} - ${name}`, text,
     }),
