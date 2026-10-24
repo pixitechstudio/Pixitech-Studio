@@ -27,6 +27,24 @@ const ld = {
   ],
 };
 
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Pixitech Studio",
+  "url": "https://pixitechstudio.com",
+  "logo": "https://pixitechstudio.com/logo.png",
+  "email": "pixitechstudio@gmail.com",
+  "telephone": "+923095054872",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Attock City",
+    "addressCountry": "Pakistan"
+  },
+  "sameAs": [
+    "https://www.instagram.com/pixitechstudioo"
+  ]
+}
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${body.variable} ${head.variable}`}>
