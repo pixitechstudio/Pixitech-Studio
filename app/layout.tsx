@@ -10,7 +10,7 @@ const head = Playfair_Display({ subsets: ["latin"], variable: "--font-head", dis
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
-  title: { default: "Pixitech Studio | Software Development & AI Automation in Pakistan", template: "%s | PixiTech Studio" },
+  title: { default: "Pixitech Studio | Software Development & AI Automation in Pakistan", template: "%s | Pixitech Studio" },
   description: "Pixitech Studio is a software development company in Attock, Pakistan building WordPress websites, web applications, Shopify stores and AI automation for clients worldwide.",
   openGraph: { type: "website", siteName: SITE.name, url: "/", images: ["/images/hero-mockup-1.jpg"] },
   twitter: { card: "summary_large_image" },
