@@ -4,6 +4,8 @@ import type { Metadata } from "next";
 import { ArrowRight, ExternalLink } from "lucide-react";
 import { Rise, Reveal } from "@/components/Motion";
 import ContactSection from "@/components/ContactSection";
+import TrustindexReviews from "@/components/TrustindexReviews";
+import ContactSection from "@/components/ContactSection";
 import { SERVICES, PROJECTS, HERO, TEAM, PROCESS, FLOW, WHY } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -140,7 +142,10 @@ export default function Home() {
           </ol>
         </div>
       </section>
-
+               <section className="wrap" style={{ padding: "40px 0" }}>
+        <p className="eyebrow">Google Reviews</p>
+        <TrustindexReviews />
+      </section>
       <ContactSection />
     </>
   );
