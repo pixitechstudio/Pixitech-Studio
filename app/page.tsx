@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 import type { Metadata } from "next";
 import { ArrowRight, ExternalLink } from "lucide-react";
 import { Rise, Reveal } from "@/components/Motion";
@@ -140,6 +141,26 @@ export default function Home() {
           </ol>
         </div>
       </section>
+      <section
+  id="google-reviews"
+  style={{
+    padding: "80px 20px",
+    background: "#171717",
+    color: "#ffffff",
+    textAlign: "center",
+  }}
+>
+  <h2 style={{ fontSize: "36px", marginBottom: "30px" }}>
+    What Our Clients Say
+  </h2>
+
+  <Script
+    src="https://business.repu.ai/widget/reviews.js"
+    strategy="afterInteractive"
+  />
+
+  <div data-repu-inline="1e835a6ec0b8baff"></div>
+</section>
       <ContactSection />
     </>
   );
